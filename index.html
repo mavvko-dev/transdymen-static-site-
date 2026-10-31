@@ -402,7 +402,10 @@
 			</section>
 
 			<footer class="bg-light text-light py-4 text-center">
-				<p class="mb-0">&copy; 2024 | TransDymen</p>
+				<p class="mb-0">
+					&copy; <span id="current-year"></span> |
+					Wykonane przez <a href="https://mavvko.pl">MaVVko</a>
+				</p>
 			</footer>
 		</main>
 
@@ -415,5 +418,9 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+		<script>
+			document.getElementById("current-year").textContent =
+				new Date().getFullYear();
+		</script>
 	</body>
 </html>
